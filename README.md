@@ -3,6 +3,7 @@
 ```scala
 mvn clean install - P idea   
 ```
+You may have to change the POM to generate a FatJar. For now you can run it from IDE.
 
 #### Exporter
 

@@ -45,11 +45,6 @@ object DataExporter extends App {
     Subscribe[String, String](topics, kafkaParams)
   )
 
-  import com.google.gson.Gson
-
-  val gson = new Gson
-
-
   stream.map(record => {
     val jsonData = ujson.read(record.value())
     val userId = jsonData("user_id").str
