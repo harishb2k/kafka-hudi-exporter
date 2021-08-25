@@ -14,6 +14,7 @@ as Hudi table
 Simple spark reader to read the Hudi table.
 
 #### Data to generate for this example to run
+Push data to kafka with following data
 ```json
 {
   "user_id":     "user_123",
